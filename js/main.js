@@ -46,6 +46,7 @@ signUpBtn.addEventListener('click',function(){
     passcheck.classList.remove('check')
     namecheck2.classList.remove('check')
     clearInput()
+    location.href="index.html"
     }else{
         namecheck.classList.remove('check')
     emailCheck.classList.remove('check')
@@ -67,11 +68,13 @@ signInBtn.addEventListener('click',function(){
         if(signUpArr.some(typo=>typo.password===signInPass.value)){
         let index=signUpArr.findIndex(fun=>fun.email===signInEmail.value)
         console.log(index)
-        document.getElementById('display').innerHTML="Welcome "+signUpArr[index].name
         pass.classList.remove('check')
         email.classList.remove('check')
         email2.classList.remove('check')
         clearInput2()
+        let x="Welcome "+signUpArr[index].name
+        localStorage.setItem('x',JSON.stringify(x))
+        window.location.href="home.html"
         }else{
             pass.classList.add('check')
         }}else{

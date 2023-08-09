@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container shadow-lg">
+    <h1 id="display" class="text-center text-white"></h1>
+    <div class="d-flex justify-content-center">
+    <a href="index.html" class="text-decoration-none text-white">Signout</a>
+</div>
+</div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>document.getElementById('display').innerHTML=JSON.parse(localStorage.getItem('x'))</script>
+</body>
+</html>
