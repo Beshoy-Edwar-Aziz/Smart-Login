@@ -1,0 +1,60 @@
+body{
+    background-color: #24353f;
+}
+section{
+    padding: 80px 0;
+}
+h1{
+    color: #17a2b8;
+}
+.btn{
+    color: #17a2b8;    
+    border: 1px solid #17a2b8;
+}
+.btn:hover{
+    color: #fff;
+    border: 1px solid #17a2b8;
+    background-color: #17a2b8;
+}
+a:hover{
+    text-decoration: underline !important;
+}
+.confirmMsg{
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%) rotate(0deg);
+    background-color: #17a2b8;
+    width: 200px;
+    height: 50px;
+    padding-top: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-in;
+    z-index: 111;
+    opacity: 0;
+}
+.appear{
+    opacity: 1 !important;
+}
+.lost{
+    opacity: 0 !important;
+}
+#signInMs{
+    display: none;
+    opacity: 0;
+    transition: all .2s;
+}
+.signinapp{
+    display: block;
+    opacity: 1;
+}
+
+#namecheck,#namecheck2,#emailcheck,#passcheck,#emailcheck2,#email,#email2,#pass{
+    display: none;
+}
+
+.check{
+    display: block !important;
+}
