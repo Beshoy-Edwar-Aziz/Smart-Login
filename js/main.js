@@ -93,7 +93,7 @@ signInBtn.addEventListener('click',function(){
     console.log(error)
 }
 function checkpass(input){
-    let regex= /^[a-zA-Z0-9!@#$%^&* ]{6,}[0-9]+[%$#&^*@!?]+[ a-z A-Z 0-9 @#$%^&*!]*$/
+    let regex= /^[a-zA-Z 0-9 !@#$%^&* ](?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%^&*?])[ a-z A-Z 0-9 @#$%^&*!]*$/
     return regex.test(input)
 }
 function checkemail(input){
