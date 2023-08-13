@@ -50,9 +50,11 @@ signUpBtn.addEventListener('click',function(){
     }else{
         namecheck.classList.remove('check')
     emailCheck.classList.remove('check')
+    emailCheck2.classList.remove('check')
         passcheck.classList.add('check')
     }}}else{
         emailCheck2.classList.add('check')
+        namecheck2.classList.remove('check')
     }}}else{
         namecheck2.classList.add('check')
     }
